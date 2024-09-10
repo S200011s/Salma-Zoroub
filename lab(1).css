@@ -1,0 +1,489 @@
+:root {
+    --main-padding: 20px;
+    --main-margin:20px;
+    --main-transition:0,2s;
+    --main-gap:20px;
+}
+* {
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: var(--main-transition);
+    user-select: none
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    line-height: 1.5;
+    font-family: "poppin", sans-serif;
+}
+img {
+    width: 100%;
+    vertical-align: middle
+}
+.container {
+    width: 85% !important;
+    margin: 0 auto;
+}
+.section {
+    padding: 40px 0
+}
+.nav {
+    background-color: white;
+    background-image: linear-gradient(rgba(42, 42, 42, 0.5), rgba(42, 42, 42, 0.5)), url("banner.png");
+    background-position: center;
+    background-size: cover;
+}
+.nav .container .parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--main-gap);
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.nav .container .parent .img {
+    width: 100px
+}
+.nav ul li a {
+    display: block;
+    padding: var(--main-padding);
+    transition: var(--main-transition)
+}
+.nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+.nav ul li a.sign {
+    background-color: black;
+    color: white
+}
+.landing {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.landing .child {
+    width: 70%;
+    text-align: center;
+    color: black;
+    padding: var(--main-padding);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+.landing .child p {
+    margin: var(--main-margin) 0
+}
+.landing .child button {
+    padding: var(--main-padding) calc(var(--main-padding) * 3);
+    background-color: transparent;
+    color: white;
+    border: 1px solid white
+}
+/* // first card */
+.First-card{
+    background-color: white;
+    text-align: center;
+}
+.First-card .container{
+    margin-bottom: 30px;   
+}
+.Box-container{
+    width: 70%;
+    margin: auto;
+    height: auto;
+}
+.First-card .Box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    gap: var(--main-gap);
+    flex-wrap: wrap;
+}
+.Box-container .Box{
+    height: 150px;
+    background-color: rgb(172, 172, 172);
+    border-radius: 8px;
+    padding: var(--main-padding);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.177);
+    transition: transform 0.3s ease;
+    width:30% ;
+}
+.Box-container .p {
+    margin-top: 10px;
+}
+/* //end of first card */
+
+/* //second card */
+.second-card{
+    background-color: white;
+    text-align: center;
+}
+.second-card .container{
+    margin-bottom: 30px;  
+}
+.second-card .Box-container2{
+    width: 70%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    gap: var(--main-gap);
+    flex-wrap: wrap;
+}
+.Box-container2 .Box2{
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.177);
+    transition: transform 0.3s ease;
+    width: 30%;
+    overflow: hidden;
+}
+.second-card .Box-container2 .img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+/* //third card// */
+.third-card{
+    background-color: white;
+}
+.third-card .container{
+    margin-bottom: 30px;  
+    text-align: center;
+}
+.Box-container3{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--main-gap);
+    flex-wrap: wrap;
+}
+
+.third-card .Box-container3{
+    width: 70%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--main-gap);
+    justify-content: space-between;
+    flex-wrap:wrap ;
+}
+.Box3{
+    height: auto;
+    background-color: white;
+    transition: transform 0.3s ease;
+    border-radius: 8PX;
+    width: 30%;
+    overflow: hidden;
+    padding:var(--main-padding) ;
+}
+.Box-container3 .Box3 .img3{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+.Box3 h3{
+    margin-top: 30px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //fourth card// */
+
+.fourth-card{
+    background-color: white;
+}
+.fourth-card .container{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Box-container4{
+    width: 70%;
+    margin: auto;
+    height: auto;
+}
+
+.fourth-card .Box-container4{
+    display: flex;
+    align-items: center;
+    justify-content:space-between; 
+    gap:var(--main-gap);
+    flex-wrap: wrap;
+}
+.Box4{
+    height: auto;
+    background-color: rgb(223, 221, 221);
+    padding: var(--main-padding);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap:var(--main-gap);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.177);
+    width: 30%;
+    /* box-sizing: border-box; */
+}
+.img4{
+    width: 30px;
+    margin-bottom: 120px;
+    border-radius: 10px;
+}
+.ph{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.h4{
+    margin-top: 10px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/*// fifth-card  */
+
+
+.fifth-card{
+    background-color: white;
+}
+.containerr {
+    width: 70%;
+    margin:auto;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    background-image: linear-gradient(rgba(42, 42, 42, 0.5), rgba(42, 42, 42, 0.5)), url("banner2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.containerr .banner-text{
+    width: 85%;
+    text-align: center ;
+    color: white;
+    padding:var(--main-padding);
+    padding-bottom: 0px;
+}
+    .banner-text button{
+        padding: var(--main-padding) calc(var(--main-padding) * 3);
+        background-color: transparent;
+        color:white;
+        border: 3px solid white;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+    .banner-text h2{
+        margin-bottom: 50px;
+    }
+
+    
+
+/*// fifth-card  end */
+
+/* <!-- //sixth card --> */
+
+.sixth-card {
+    background-color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.con {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    height:30vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.con .content{
+    text-align: center;
+    padding-right: 250px;
+    padding-left: 250px;
+    padding-top: 0px;
+}
+.image6 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-container{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.img6{
+    width: 50px;
+    margin-top: 0px;
+}
+.footer {
+    margin-top: 30px;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fr{
+    background-color: black;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.fr p {
+    color: white;
+}
+/* ///////////////////////////////////////////////////////////////// */
+@media (min-width:0px) and (max-width:767px) {
+
+    .nav .container,
+    .nav .container .parent {
+        flex-flow: column;
+        gap: var(--main-gap)
+    }
+
+    .landing .child {
+        width: 95%;
+
+    }
+    .First-card .Box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Box-container .Box {
+        width: 80%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .second-card .Box-container2 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Box-container2 .Box2 {
+        width: 80%;
+        height: auto;
+        margin-bottom: 280PX;
+    }
+    .Box-container3 .Box3{
+        width: 100%;
+        margin-bottom: 20PX;
+    }
+    .Box-container4 .Box4 {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    .containerr{
+        width: 100%;
+        height: 40vh;
+    }
+    .containerr .banner-text h2{
+        margin-top: 30px;
+        margin-top: 30px;
+    }
+    .containerr .banner-text button{
+        padding: var(--main-padding) calc(var(--main-padding) * 2);
+    }
+    .con{
+        width: 90%;
+    }
+    .con .content{
+        padding-right: 50px;
+        padding-left: 50px;    
+    }
+    .img-container{
+        flex-direction: column;
+    }
+    .img6{
+        width: 30px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .First-card .container .Box{
+        width: calc((100% / 2) - (16px / 2));
+    }
+
+    .Box-container .Box {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .second-card .Box-container2 {
+        width: 90%;
+    }
+    .Box-container2 .Box2 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .third-card .Box-container3 {
+        width: 90%;
+    }
+
+    .Box-container3 .Box3 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .fourth-card .Box-container4 {
+        width: 90%;
+    }
+
+    .Box-container4 .Box4{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .containerr{
+        width: 90%;
+        height: 35vh;
+    }
+    .containerr .banner-text button{
+        padding: var(--main-padding) calc(var(--main-padding) * 2.5);
+    }
+    .con .content{
+        padding-right: 150px;
+        padding-left: 150px;    
+        margin-top: 50px;
+    }
+    .img6{
+        width: 40px;
+    }
+    .image6{
+        margin-top: 50px;
+    }
+
+}
